@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background: linear-gradient(90deg, #b7b78a 50%,#3c653c 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wapper{
+    background-color: white;
+    height: 90vh;
+    width: 90%;
+    
+}
+.navbar .logo{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: 2px solid #3c653c;
+    border-radius: 50%;
+    border-right-color:transparent ;
+    position: relative;
+
+}
+.navbar .logo::before{
+    content: "Shopify";
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-50%);
+    font-family: "Dancing Script", system-ui;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+    
+}
+.navbar ,.navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlist li{
+       list-style-type: none;
+       padding: 20px;
+}
+.navlist a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        position: relative;
+}
+.navlist a::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    transition:  1s ease-in-out;
+    
+}
+.navlist a:hover::before{
+    width: 100%;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    /* border-left: 2px solid #3c653c;
+    padding: 20px, 50px; */
+}
+.content h3{
+    color: rgb(73,73,73);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content h1{
+    color: #3c653c;
+    font-size: 50px;
+}
+.content p{
+    color: black;
+    font-size: 15px;
+    line-height: 25px;
+}
+.content button{
+    padding: 20px , 40px;
+    font-size:20px ;
+    color: white;
+    border: none;
+    background-color: #3c653c;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: white;
+    color: #3c653c;
+}
